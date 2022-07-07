@@ -1,13 +1,28 @@
+html {
+  /* Setting the font size to 62.5% percent of the parent
+   element */
+  font-size: 62.5%; 
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /*
+  300: font weight -> The more, the bolder text
+  11px: font size -> The more, the bigger text
+  1.4: line height -> The more, the higher line
+  Helvetica Nue: default font
+  */ 
+  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  color: #444;
+  background-color: #022c43;
+  /* A content inside a box is clipped to fit the padding box.No scrollbars are provided, and no support for allowing the user to scroll */
+  overflow: hidden;
+  /*
+  Display an element as a block element(like <p>). It starts on a new line, and takes up the whole width.
+  */
+  display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

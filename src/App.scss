@@ -1,0 +1,33 @@
+// SCSS is a special type of file(a syntax) for "SASS", it adds
+// lots of functionality to CSS like variables, nesting
+
+// Setting the primary color
+$primary-color: #ffd700;
+
+// Importing animate.css
+@import 'animate.css';
+
+// Custom font with which to display text
+// We have 3 fonts
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Colvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+// For input fields
+input,
+// For textarea fields
+textarea {
+// Using the font that we defined in "@font-face"
+  font-family: 'Helvetica Neue';  
+}
