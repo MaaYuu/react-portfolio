@@ -28,7 +28,29 @@ const Home = () => {
     'e',
     'r',
   ]
-
+  
+  // It is key to fully understand the component flow of 
+  // functional components.
+  // What are effects? Examples are:
+  // Fetching data, reading from local storage, registering 
+  // and deregistering event listeners
+  // Effects run after every render cycle.
+  // You should ensure that components are not re-render 
+  //unnecessarily.
+  // Always use "useEffect" for asynchronous tasks
+  // Use multiple effects to separate concerns
+  // "UseEffect" are invoked after render. To be precise,
+  // It runs both after the first render and after every update.
+  // Common side exffects:
+    // Making a request to an API for data from a backend server
+    // To interact with browser APIs (that is, to use "document" or
+      // "window" directly)
+    // Using unpredictable timing functions like "setTimeout" or "setInterval"
+    // "useEffect" is a tool that lets us interact with the outside world but 
+    // not affect the rendering or performance of the component that it's in.
+    // Second argument is dependency array. This will do is that it will check
+    // and see if a value has changed between renders. If there is no dependency
+    // array, then it will run after every render.
   useEffect(() => {
     setTimeout(() => {
       return setLetterClass('text-animate-hover')
