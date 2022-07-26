@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+## Personel Portfolio App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This personel portfolio app is created with
+
+- React.js
+
+- Scss (Sass)
+
+- React-Router-DOM
+
+and deployed to [Vercel](https://react-portfolio-maayuu.vercel.app/).
 
 ## Available Scripts
 
